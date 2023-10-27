@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                docker version
                 cd myapp
                 pip install -r requirements.txt
                 '''
